@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros de Salud Sanitas - Asesoría Personalizada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="config.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2 id="empresa-nombre">Seguros Sanitas</h2>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img id="hero-imagen" src="" alt="Asesora de Seguros">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-titulo">Tu Asesora de Seguros de Salud</h1>
+                    <p class="subtitle" id="hero-subtitulo">Especialista en seguros Sanitas</p>
+                    <p class="description" id="hero-descripcion">
+                        Te ayudo a encontrar el mejor seguro de salud adaptado a tus necesidades. 
+                        Asesoramiento personalizado, sin compromiso y con total transparencia.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#" id="hero-whatsapp-btn" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-heart-pulse"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="services">
+            <div class="container">
+                <h2>¿Por qué elegir Sanitas?</h2>
+                <div class="service-grid" id="service-grid">
+                    <!-- Se generará dinámicamente desde config.js -->
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider section-divider-light">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="about-me">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <div class="about-me-content">
+                    <div class="about-me-image">
+                        <img id="perfil-imagen" src="" alt="Foto de perfil">
+                    </div>
+                    <div class="about-me-text">
+                        <h3 id="nombre-personal">Tu Nombre</h3>
+                        <p class="role" id="titulo-personal">Asesora de Seguros de Salud</p>
+                        <p id="sobre-mi-p1">
+                            Aquí puedes escribir tu presentación personal. Cuéntales a tus clientes quién eres, 
+                            tu experiencia en el sector de seguros, qué te motivó a dedicarte a esto y por qué 
+                            pueden confiar en ti.
+                        </p>
+                        <p id="sobre-mi-p2">
+                            Menciona tu formación, años de experiencia, número de clientes satisfechos, o cualquier 
+                            dato relevante que genere confianza. También puedes hablar de tu filosofía de trabajo 
+                            y compromiso con tus clientes.
+                        </p>
+                        <p id="sobre-mi-p3">
+                            Este espacio es para que te conectes personalmente con tus futuros clientes y generes 
+                            cercanía y confianza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider section-divider-white">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <h2>Asesoramiento Personalizado</h2>
+                <p>
+                    Como asesora independiente de seguros, mi objetivo es ayudarte a encontrar 
+                    la mejor cobertura de salud para ti y tu familia. Te ofrezco:
+                </p>
+                <ul class="benefits" id="benefits-list">
+                    <!-- Se generará dinámicamente desde config.js -->
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider section-divider-white">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Lo Que Dicen Mis Clientes</h2>
+                <div class="testimonials-grid" id="testimonials-grid">
+                    <!-- Se generará dinámicamente desde config.js -->
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider section-divider-light">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-list" id="faq-list">
+                    <!-- Se generará dinámicamente desde config.js -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <p>Estoy aquí para resolver todas tus dudas</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-form-container">
+                        <h3>Solicita tu Presupuesto Gratuito</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="interest" name="interest" required>
+                                    <!-- Se generará dinámicamente desde config.js -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="4" placeholder="Cuéntame qué necesitas..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                            </button>
+                            <p class="form-note">* Te responderé en menos de 24 horas</p>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-direct">
+                        <h3>O Contáctame Directamente</h3>
+                        <div class="contact-options" id="contact-options">
+                            <!-- Se generará dinámicamente desde config.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" id="social-links-footer">
+                <!-- Se generará dinámicamente desde config.js -->
+            </div>
+            <p id="footer-text">&copy; 2026 Asesoría de Seguros Sanitas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // INICIALIZACIÓN DE LA PÁGINA
+        // ============================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePage();
+            initializeFAQ();
+            initializeContactForm();
+        });
+
+        function initializePage() {
+            // Hero Section
+            document.getElementById('empresa-nombre').textContent = CONFIG.personal.empresa;
+            document.getElementById('hero-imagen').src = CONFIG.personal.fotoHero;
+            document.getElementById('hero-titulo').textContent = CONFIG.textos.heroTitulo;
+            document.getElementById('hero-subtitulo').textContent = CONFIG.textos.heroSubtitulo;
+            document.getElementById('hero-descripcion').textContent = CONFIG.textos.heroDescripcion;
+            document.getElementById('hero-whatsapp-btn').href = getWhatsAppLink();
+
+            // Sección "Sobre Mí"
+            document.getElementById('perfil-imagen').src = CONFIG.personal.fotoPerfil;
+            document.getElementById('perfil-imagen').alt = CONFIG.personal.nombre;
+            document.getElementById('nombre-personal').textContent = CONFIG.personal.nombre;
+            document.getElementById('titulo-personal').textContent = CONFIG.personal.titulo;
+            document.getElementById('sobre-mi-p1').textContent = CONFIG.textos.sobreMiParrafo1;
+            document.getElementById('sobre-mi-p2').textContent = CONFIG.textos.sobreMiParrafo2;
+            document.getElementById('sobre-mi-p3').textContent = CONFIG.textos.sobreMiParrafo3;
+
+            // Footer
+            document.getElementById('footer-text').textContent = `© ${CONFIG.textos.añoActual} Asesoría de Seguros ${CONFIG.personal.empresa}. Todos los derechos reservados.`;
+
+            // Generar contenido dinámico
+            generateServiceCards();
+            generateBenefitsList();
+            generateTestimonials();
+            generateFAQ();
+            generateFormOptions();
+            generateContactButtons();
+            generateSocialLinks();
+        }
+
+        function generateServiceCards() {
+            const grid = document.getElementById('service-grid');
+            CONFIG.beneficiosSanitas.forEach(servicio => {
+                const card = `
+                    <div class="service-card">
+                        <i class="fas ${servicio.icono}"></i>
+                        <h3>${servicio.titulo}</h3>
+                        <p>${servicio.descripcion}</p>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        function generateBenefitsList() {
+            const list = document.getElementById('benefits-list');
+            CONFIG.beneficiosAsesoramiento.forEach(beneficio => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fas fa-check-circle"></i> ${beneficio}`;
+                list.appendChild(li);
+            });
+        }
+
+        function generateTestimonials() {
+            const grid = document.getElementById('testimonials-grid');
+            CONFIG.testimonios.forEach(testimonio => {
+                const stars = Array(testimonio.estrellas).fill('<i class="fas fa-star"></i>').join('');
+                const card = `
+                    <div class="testimonial-card">
+                        <div class="stars">${stars}</div>
+                        <p class="testimonial-text">"${testimonio.texto}"</p>
+                        <p class="testimonial-author">- ${testimonio.autor}</p>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        function generateFAQ() {
+            const list = document.getElementById('faq-list');
+            CONFIG.preguntasFrecuentes.forEach((faq, index) => {
+                const item = `
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>${faq.pregunta}</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>${faq.respuesta}</p>
+                        </div>
+                    </div>
+                `;
+                list.innerHTML += item;
+            });
+        }
+
+        function generateFormOptions() {
+            const select = document.querySelector('#interest');
+            CONFIG.opcionesFormulario.forEach(opcion => {
+                const option = document.createElement('option');
+                option.value = opcion.valor;
+                option.textContent = opcion.texto;
+                select.appendChild(option);
+            });
+        }
+
+        function generateContactButtons() {
+            const container = document.getElementById('contact-options');
+            
+            // WhatsApp
+            const whatsapp = `
+                <a href="${getWhatsAppLink()}" class="contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            `;
+            container.innerHTML += whatsapp;
+
+            // Instagram
+            if (CONFIG.contacto.instagram) {
+                const instagram = `
+                    <a href="${getSocialLink('instagram')}" class="contact-btn instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                `;
+                container.innerHTML += instagram;
+            }
+
+            // TikTok
+            if (CONFIG.contacto.tiktok) {
+                const tiktok = `
+                    <a href="${getSocialLink('tiktok')}" class="contact-btn tiktok" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                `;
+                container.innerHTML += tiktok;
+            }
+
+            // Facebook (opcional)
+            if (CONFIG.contacto.facebook) {
+                const facebook = `
+                    <a href="${getSocialLink('facebook')}" class="contact-btn facebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                `;
+                container.innerHTML += facebook;
+            }
+
+            // LinkedIn (opcional)
+            if (CONFIG.contacto.linkedin) {
+                const linkedin = `
+                    <a href="${getSocialLink('linkedin')}" class="contact-btn linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                `;
+                container.innerHTML += linkedin;
+            }
+        }
+
+        function generateSocialLinks() {
+            const footer = document.getElementById('social-links-footer');
+            
+            // WhatsApp
+            footer.innerHTML += `
+                <a href="${getWhatsAppLink()}" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            `;
+
+            // Instagram
+            if (CONFIG.contacto.instagram) {
+                footer.innerHTML += `
+                    <a href="${getSocialLink('instagram')}" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                `;
+            }
+
+            // TikTok
+            if (CONFIG.contacto.tiktok) {
+                footer.innerHTML += `
+                    <a href="${getSocialLink('tiktok')}" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                `;
+            }
+
+            // Facebook
+            if (CONFIG.contacto.facebook) {
+                footer.innerHTML += `
+                    <a href="${getSocialLink('facebook')}" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                `;
+            }
+
+            // LinkedIn
+            if (CONFIG.contacto.linkedin) {
+                footer.innerHTML += `
+                    <a href="${getSocialLink('linkedin')}" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                `;
+            }
+        }
+
+        function initializeFAQ() {
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.faq-question')) {
+                    const question = e.target.closest('.faq-question');
+                    const faqItem = question.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    // Cerrar todos los items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Abrir el item clickeado si no estaba activo
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        function initializeContactForm() {
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const email = document.getElementById('email').value;
+                const interest = document.getElementById('interest').value;
+                const message = document.getElementById('message').value;
+                
+                // Crear mensaje de WhatsApp
+                const whatsappMessage = `Hola, soy ${name}.
+
+Teléfono: ${phone}
+Email: ${email}
+Interés: ${interest}
+
+Mensaje: ${message}`;
+                
+                // Redirigir a WhatsApp
+                window.open(getWhatsAppLink(whatsappMessage), '_blank');
+                
+                // Reset form
+                this.reset();
+                alert('¡Gracias! Te estoy redirigiendo a WhatsApp para completar tu solicitud.');
+            });
+        }
+    </script>
+</body>
+</html>
