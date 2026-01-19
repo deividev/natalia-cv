@@ -9,6 +9,7 @@ Esta guía te permite configurar la web para un nuevo cliente en **menos de 5 mi
 ### 1️⃣ PREPARACIÓN (1 minuto)
 
 **Pide al cliente:**
+
 - [ ] Su nombre completo
 - [ ] Su número de WhatsApp
 - [ ] Sus usuarios de redes sociales (Instagram, TikTok, etc.)
@@ -51,6 +52,7 @@ fotoHero: "https://i.imgur.com/YYYYYY.jpg",
 Abre **`config.js`** y cambia SOLO estas secciones:
 
 #### A) Datos Personales (líneas 7-30)
+
 ```javascript
 personal: {
     nombre: "María García López",        // ← NOMBRE DEL CLIENTE
@@ -62,6 +64,7 @@ personal: {
 ```
 
 #### B) Contacto (líneas 32-42)
+
 ```javascript
 contacto: {
     telefono: "34612345678",      // ← WHATSAPP (sin espacios)
@@ -73,6 +76,7 @@ contacto: {
 ```
 
 #### C) Textos Hero (líneas 44-50)
+
 ```javascript
 textos: {
     heroTitulo: "María García - Tu Experta en Seguros",
@@ -101,6 +105,7 @@ textos: {
 ### ⚡ MÍNIMA (5 min - para arrancar rápido)
 
 Solo cambia:
+
 - `personal.nombre`
 - `personal.telefono`
 - `personal.fotoPerfil`
@@ -116,6 +121,7 @@ Solo cambia:
 ### 🎨 COMPLETA (30 min - para entregar profesional)
 
 Además de lo mínimo:
+
 - Todos los textos en `textos`
 - Testimonios personalizados
 - FAQs adaptadas
@@ -175,15 +181,24 @@ Por favor envía 2 fotos profesionales:
 ## 🔄 PROCESO COMPLETO PARA NUEVO CLIENTE
 
 ### PASO 1: Recibe datos (usar plantilla arriba)
+
 ### PASO 2: Prepara imágenes
-   - Opción A: Guarda en carpeta `images/`
-   - Opción B: Sube a Imgur y copia URLs
+
+- Opción A: Guarda en carpeta `images/`
+- Opción B: Sube a Imgur y copia URLs
+
 ### PASO 3: Abre config.js
+
 ### PASO 4: Cambia datos básicos (personal + contacto)
+
 ### PASO 5: Guarda y prueba en navegador
+
 ### PASO 6: Verifica botones WhatsApp y redes
+
 ### PASO 7: Si todo OK → Personaliza textos completos
+
 ### PASO 8: Verifica con CHECKLIST.md
+
 ### PASO 9: Publica
 
 **Tiempo total: 5-30 minutos según nivel de personalización**
@@ -193,7 +208,9 @@ Por favor envía 2 fotos profesionales:
 ## 💡 TRUCOS PARA IR MÁS RÁPIDO
 
 ### 1. Usa plantillas predefinidas
+
 Guarda configuraciones de clientes anteriores como referencia:
+
 ```
 config-cliente1.js
 config-cliente2.js
@@ -201,7 +218,9 @@ config-plantilla-basica.js
 ```
 
 ### 2. Script de reemplazo rápido
+
 Crea un documento con los campos a buscar:
+
 ```
 BUSCAR: "Tu Nombre"          → REEMPLAZAR: "María García"
 BUSCAR: "34XXXXXXXXX"        → REEMPLAZAR: "34612345678"
@@ -209,7 +228,9 @@ BUSCAR: "tu_usuario"         → REEMPLAZAR: "maria_seguros"
 ```
 
 ### 3. Fotos estandarizadas
+
 Pide siempre el mismo formato:
+
 - Perfil: 800x800px, JPG, < 200KB
 - Hero: 1920x1080px, JPG, < 500KB
 
@@ -220,31 +241,36 @@ Así puedes usar siempre `images/perfil.jpg` y `images/hero.jpg`
 ## 🎨 PERSONALIZACIÓN POR NIVELES
 
 ### NIVEL 1 - EXPRESS (5 min)
+
 ```javascript
 ✏️ Cambia SOLO:
 - nombre
-- telefono  
+- telefono
 - fotoPerfil
 - fotoHero
 - instagram
 - heroTitulo
 ```
+
 **Resultado:** Web funcional básica
 
 ---
 
 ### NIVEL 2 - ESTÁNDAR (15 min)
+
 ```javascript
 ✏️ Añade:
 - Todos los textos principales
 - Redes sociales completas
 - Ajusta heroDescripcion
 ```
+
 **Resultado:** Web personalizada presentable
 
 ---
 
 ### NIVEL 3 - PREMIUM (30-60 min)
+
 ```javascript
 ✏️ Añade:
 - Sección "Sobre Mí" completa
@@ -252,6 +278,7 @@ Así puedes usar siempre `images/perfil.jpg` y `images/hero.jpg`
 - FAQs adaptadas al cliente
 - Beneficios específicos
 ```
+
 **Resultado:** Web única y profesional
 
 ---
@@ -259,17 +286,22 @@ Así puedes usar siempre `images/perfil.jpg` y `images/hero.jpg`
 ## ⚠️ ERRORES COMUNES (Y CÓMO EVITARLOS)
 
 ### ❌ Error: "WhatsApp abre pero no es el número del cliente"
+
 **Solución:** Verifica `contacto.telefono` - debe ser formato: `34612345678`
 
 ### ❌ Error: "Las fotos no cargan"
-**Solución:** 
+
+**Solución:**
+
 - Si usas local: verifica que la carpeta `images/` existe
 - Si usas URL: verifica que la imagen sea pública
 
 ### ❌ Error: "Instagram/TikTok llevan a perfil equivocado"
+
 **Solución:** Revisa `contacto.instagram` y `contacto.tiktok` - solo usuario, sin @
 
 ### ❌ Error: "Aparece texto de ejemplo"
+
 **Solución:** Busca en config.js y cambia todos los "Tu Nombre", "tu_usuario", etc.
 
 ---
@@ -296,6 +328,7 @@ Antes de enviar/publicar la web del cliente:
 ### Script de verificación rápida (mental)
 
 Cuando termines config.js, busca en el archivo:
+
 - ❌ "Tu Nombre" → debe estar cambiado
 - ❌ "tu_usuario" → debe estar cambiado
 - ❌ "34XXXXXXXXX" → debe estar cambiado
@@ -307,17 +340,17 @@ Si encuentras alguno de estos, aún falta personalizarlo.
 
 ## 📊 TIEMPOS ESTIMADOS POR TAREA
 
-| Tarea | Tiempo |
-|-------|--------|
-| Recibir datos del cliente | 5 min |
-| Preparar imágenes | 3 min |
-| Editar config.js (básico) | 5 min |
-| Verificar funcionamiento | 2 min |
-| Personalización completa | +20 min |
-| Verificación final | 5 min |
-| Publicación | 10 min |
-| **TOTAL EXPRESS** | **15 min** |
-| **TOTAL COMPLETO** | **50 min** |
+| Tarea                     | Tiempo     |
+| ------------------------- | ---------- |
+| Recibir datos del cliente | 5 min      |
+| Preparar imágenes         | 3 min      |
+| Editar config.js (básico) | 5 min      |
+| Verificar funcionamiento  | 2 min      |
+| Personalización completa  | +20 min    |
+| Verificación final        | 5 min      |
+| Publicación               | 10 min     |
+| **TOTAL EXPRESS**         | **15 min** |
+| **TOTAL COMPLETO**        | **50 min** |
 
 ---
 
@@ -379,6 +412,7 @@ CV Nata/
 ```
 
 Para cambiar de cliente:
+
 1. Copia `config-nuevo-cliente.js`
 2. Pégalo y renombra como `config.js`
 3. Listo, web del nuevo cliente activa
@@ -388,6 +422,7 @@ Para cambiar de cliente:
 ## ✅ ENTREGA AL CLIENTE
 
 Incluye:
+
 1. ✅ Carpeta completa del proyecto
 2. ✅ Guía rápida (INICIO-RAPIDO.md)
 3. ✅ Credenciales si publicaste (Netlify, etc.)
@@ -395,6 +430,7 @@ Incluye:
 
 **Archivo para el cliente:**
 Crea `LEEME-CLIENTE.txt`:
+
 ```
 Tu web está lista en: [URL]
 

@@ -31,6 +31,7 @@ contacto: {
 ```
 
 ### ⚠️ IMPORTANTE: Formato del teléfono
+
 - Usa el formato internacional
 - España: **34** + tu número (sin espacios)
 - Ejemplo: Si tu móvil es 612 345 678, escribe: **34612345678**
@@ -42,7 +43,7 @@ textos: {
     heroTitulo: "Escribe aquí tu título principal",
     heroSubtitulo: "Tu subtítulo",
     heroDescripcion: "Describe qué ofreces...",
-    
+
     sobreMiParrafo1: "Cuéntales quién eres...",
     sobreMiParrafo2: "Tu experiencia...",
     sobreMiParrafo3: "Por qué confiar en ti...",
@@ -81,11 +82,13 @@ Una vez que tengas lo básico:
 ## 📱 ¿Cómo Subir Mis Fotos?
 
 ### Opción A: Fotos locales
+
 1. Crea una carpeta "images" donde están tus archivos
 2. Guarda tus fotos ahí (ejemplo: "perfil.jpg")
 3. En config.js escribe: `fotoPerfil: "images/perfil.jpg"`
 
 ### Opción B: Fotos en Internet
+
 1. Sube tu foto a imgur.com o imgbb.com
 2. Copia el enlace directo de la imagen
 3. Pégalo en config.js
@@ -115,6 +118,7 @@ Una vez que tengas lo básico:
 ## 💡 CONSEJO PRO
 
 Empieza con los cambios mínimos:
+
 1. Nombre
 2. WhatsApp
 3. Textos principales

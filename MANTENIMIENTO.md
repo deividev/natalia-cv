@@ -9,6 +9,7 @@ Esta guía te ayuda a mantener tu web actualizada y optimizada después de publi
 ### Cada Mes
 
 ✅ **Actualizar testimonios**
+
 - Añade nuevos comentarios de clientes satisfechos
 - Pide permiso antes de usar nombres reales
 - Mantén un mínimo de 3-6 testimonios
@@ -16,18 +17,19 @@ Esta guía te ayuda a mantener tu web actualizada y optimizada después de publi
 ```javascript
 // En config.js
 testimonios: [
-    {
-        estrellas: 5,
-        texto: "Nuevo testimonio aquí...",
-        autor: "Cliente Nuevo"
-    }
-    // Añade al final del array
-]
+  {
+    estrellas: 5,
+    texto: "Nuevo testimonio aquí...",
+    autor: "Cliente Nuevo",
+  },
+  // Añade al final del array
+];
 ```
 
 ---
 
 ✅ **Revisar FAQs**
+
 - ¿Recibes preguntas nuevas frecuentemente?
 - Añádelas a la sección de preguntas frecuentes
 - Actualiza respuestas si cambian condiciones
@@ -35,12 +37,12 @@ testimonios: [
 ```javascript
 // En config.js
 preguntasFrecuentes: [
-    // Añade nuevas preguntas al final
-    {
-        pregunta: "Nueva pregunta frecuente",
-        respuesta: "Respuesta clara y útil"
-    }
-]
+  // Añade nuevas preguntas al final
+  {
+    pregunta: "Nueva pregunta frecuente",
+    respuesta: "Respuesta clara y útil",
+  },
+];
 ```
 
 ---
@@ -48,6 +50,7 @@ preguntasFrecuentes: [
 ### Cada 3 Meses
 
 ✅ **Actualizar fotos**
+
 - Renueva la foto de perfil si es necesario
 - Cambia la imagen hero para dar frescura
 - Asegúrate de que las fotos sean profesionales
@@ -55,6 +58,7 @@ preguntasFrecuentes: [
 ---
 
 ✅ **Revisar enlaces**
+
 - Verifica que todos los botones de WhatsApp funcionen
 - Comprueba enlaces de redes sociales
 - Asegúrate de que tu número de WhatsApp esté activo
@@ -62,6 +66,7 @@ preguntasFrecuentes: [
 ---
 
 ✅ **Optimizar textos**
+
 - Lee tu sección "Sobre Mí" - ¿sigue vigente?
 - Actualiza logros o nuevos certificados
 - Menciona nuevos números (clientes atendidos, años de experiencia)
@@ -71,6 +76,7 @@ preguntasFrecuentes: [
 ### Cada 6 Meses
 
 ✅ **Revisar diseño y contenido**
+
 - ¿El diseño sigue siendo actual?
 - ¿Los colores representan tu marca?
 - ¿El contenido sigue siendo relevante?
@@ -82,7 +88,7 @@ preguntasFrecuentes: [
 ```javascript
 // En config.js
 textos: {
-    añoActual: "2027"  // Actualiza cada año
+  añoActual: "2027"; // Actualiza cada año
 }
 ```
 
@@ -148,6 +154,7 @@ textos: {
 ### Proceso paso a paso:
 
 1. **Haz una copia de seguridad**
+
    ```
    - Copia config.js → config-backup-FECHA.js
    - Guarda en un lugar seguro
@@ -192,6 +199,7 @@ Puedes crear un archivo `CHANGELOG.txt` en tu carpeta.
 ### Error: "La página no se actualiza"
 
 **Solución:**
+
 - Borra caché del navegador (Ctrl + F5)
 - Espera unos minutos si actualizaste online
 - Verifica que guardaste config.js
@@ -201,6 +209,7 @@ Puedes crear un archivo `CHANGELOG.txt` en tu carpeta.
 ### Error: "Algo se rompió después de editar"
 
 **Solución:**
+
 - Revisa que no falten comas (,)
 - Verifica que todas las comillas estén cerradas
 - Compara con tu backup
@@ -211,6 +220,7 @@ Puedes crear un archivo `CHANGELOG.txt` en tu carpeta.
 ### Error: "Las imágenes nuevas no cargan"
 
 **Solución:**
+
 - Verifica la URL o ruta
 - Asegúrate de que la imagen sea pública
 - Comprueba el nombre del archivo (mayúsculas/minúsculas)
@@ -235,6 +245,7 @@ Cada vez que actualices:
 ## 💡 IDEAS DE CONTENIDO NUEVO
 
 ### Testimonios creativos
+
 ```javascript
 {
     estrellas: 5,
@@ -247,6 +258,7 @@ Cada vez que actualices:
 ---
 
 ### FAQs más específicas
+
 ```javascript
 {
     pregunta: "¿Cuánto tarda en responder a un WhatsApp?",
@@ -258,6 +270,7 @@ Cada vez que actualices:
 ---
 
 ### Beneficios diferenciadores
+
 ```javascript
 {
     icono: "fa-gift",
@@ -273,12 +286,12 @@ Cada vez que actualices:
 
 Aunque esta web es estática, puedes llevar registro manual:
 
-| Métrica | Cómo medirla |
-|---------|--------------|
-| Contactos WhatsApp | Cuenta mensajes nuevos |
-| Conversión | De contactos a clientes |
-| Preguntas frecuentes | ¿Cuáles te hacen más? |
-| Redes sociales | ¿De dónde vienen? |
+| Métrica              | Cómo medirla            |
+| -------------------- | ----------------------- |
+| Contactos WhatsApp   | Cuenta mensajes nuevos  |
+| Conversión           | De contactos a clientes |
+| Preguntas frecuentes | ¿Cuáles te hacen más?   |
+| Redes sociales       | ¿De dónde vienen?       |
 
 Usa esto para mejorar el contenido de tu web.
 
@@ -360,25 +373,30 @@ Guarda, prueba, actualiza online.
 ## ✅ CALENDARIO DE MANTENIMIENTO
 
 ### Semanal
+
 - [ ] Responder contactos de WhatsApp
 
 ### Mensual
+
 - [ ] Revisar y responder mensajes
 - [ ] Añadir nuevo testimonio (si tienes)
 - [ ] Revisar enlaces de redes sociales
 
 ### Trimestral
+
 - [ ] Actualizar fotografías
 - [ ] Revisar y optimizar textos
 - [ ] Añadir nuevas FAQs
 - [ ] Verificar funcionalidad completa
 
 ### Semestral
+
 - [ ] Evaluación completa del diseño
 - [ ] Actualizar estadísticas de éxito
 - [ ] Considerar mejoras mayores
 
 ### Anual
+
 - [ ] Actualizar año en footer
 - [ ] Revisión completa de contenido
 - [ ] Backup completo del proyecto
@@ -389,15 +407,18 @@ Guarda, prueba, actualiza online.
 ## 🎓 RECURSOS ÚTILES
 
 ### Para optimizar imágenes:
+
 - TinyPNG.com
 - Squoosh.app
 - Compressor.io
 
 ### Para encontrar iconos:
+
 - FontAwesome.com (ya incluido)
 - Iconos gratuitos: flaticon.com
 
 ### Para aprender más:
+
 - W3Schools.com (HTML/CSS básico)
 - MDN Web Docs (referencia completa)
 
@@ -459,6 +480,7 @@ _________________________________
 ## 🎉 CONCLUSIÓN
 
 Mantener tu web actualizada es fácil:
+
 1. Backup antes de cambiar
 2. Edita config.js
 3. Prueba localmente

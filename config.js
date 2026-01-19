@@ -9,9 +9,9 @@ const CONFIG = {
     nombre: "Tu Nombre",
     titulo: "Asesora de Seguros de Salud",
     empresa: "Seguros Sanitas",
-    
+
     // IMÁGENES - Elige UNA de estas 2 opciones:
-    // 
+    //
     // OPCIÓN A (RECOMENDADA): Guardar imágenes localmente
     // 1. Crea una carpeta llamada "images" en tu proyecto
     // 2. Guarda tus fotos ahí (ejemplo: perfil.jpg, hero.jpg)
@@ -23,10 +23,12 @@ const CONFIG = {
     // 1. Sube tus fotos a imgur.com o imgbb.com
     // 2. Copia la URL directa de la imagen
     // 3. Pégala aquí (como está ahora)
-    
-    fotoPerfil: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800",
-    fotoHero: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200",
-    
+
+    fotoPerfil:
+      "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800",
+    fotoHero:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200",
+
     // EJEMPLOS:
     // Local: fotoPerfil: "images/mi-foto.jpg",
     // URL:   fotoPerfil: "https://i.imgur.com/abc123.jpg",

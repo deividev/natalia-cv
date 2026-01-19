@@ -31,6 +31,7 @@ Esta guía te muestra exactamente **dónde aparece cada cosa** que editas en con
 ```
 
 **Editas:**
+
 - `personal.empresa` → Nombre en la barra superior
 - `personal.fotoHero` → Imagen de fondo
 - `textos.heroTitulo` → Título principal
@@ -57,15 +58,16 @@ Esta guía te muestra exactamente **dónde aparece cada cosa** que editas en con
 ```
 
 **Editas:**
+
 ```javascript
 beneficiosSanitas: [
-    {
-        icono: "fa-hospital",        // ← Ícono Font Awesome
-        titulo: "Red de Hospitales",  // ← Título de la tarjeta
-        descripcion: "Acceso a..."    // ← Descripción
-    },
-    // ... más tarjetas
-]
+  {
+    icono: "fa-hospital", // ← Ícono Font Awesome
+    titulo: "Red de Hospitales", // ← Título de la tarjeta
+    descripcion: "Acceso a...", // ← Descripción
+  },
+  // ... más tarjetas
+];
 ```
 
 ---
@@ -91,6 +93,7 @@ beneficiosSanitas: [
 ```
 
 **Editas:**
+
 - `personal.fotoPerfil` → Tu foto
 - `personal.nombre` → Tu nombre
 - `personal.titulo` → Tu cargo/especialidad
@@ -118,15 +121,16 @@ beneficiosSanitas: [
 ```
 
 **Editas:**
+
 ```javascript
 testimonios: [
-    {
-        estrellas: 5,                    // ← Número de estrellas
-        texto: "Excelente atención...",  // ← Comentario
-        autor: "María G."                // ← Nombre del cliente
-    },
-    // ... más testimonios
-]
+  {
+    estrellas: 5, // ← Número de estrellas
+    texto: "Excelente atención...", // ← Comentario
+    autor: "María G.", // ← Nombre del cliente
+  },
+  // ... más testimonios
+];
 ```
 
 ---
@@ -148,14 +152,15 @@ testimonios: [
 ```
 
 **Editas:**
+
 ```javascript
 preguntasFrecuentes: [
-    {
-        pregunta: "¿Tu pregunta aquí?",  // ← La pregunta
-        respuesta: "Tu respuesta aquí..."  // ← La respuesta
-    },
-    // ... más preguntas
-]
+  {
+    pregunta: "¿Tu pregunta aquí?", // ← La pregunta
+    respuesta: "Tu respuesta aquí...", // ← La respuesta
+  },
+  // ... más preguntas
+];
 ```
 
 ---
@@ -180,6 +185,7 @@ preguntasFrecuentes: [
 ```
 
 **Editas:**
+
 - `contacto.telefono` → Número de WhatsApp
 - `contacto.instagram` → Usuario de Instagram
 - `contacto.tiktok` → Usuario de TikTok
@@ -206,8 +212,9 @@ preguntasFrecuentes: [
 ```
 
 **Editas:**
+
 - `contacto.telefono` → Link de WhatsApp
-- `contacto.instagram` → Link de Instagram  
+- `contacto.instagram` → Link de Instagram
 - `contacto.tiktok` → Link de TikTok
 - `contacto.facebook` → Link de Facebook
 - `contacto.linkedin` → Link de LinkedIn
@@ -226,7 +233,7 @@ Si quieres cambiar los colores, edita al inicio de **styles.css**:
     --secondary-color: #0077b6;  ← Color azul secundario
     --accent-color: #48cae4;     ← Color de acento (hover)
     --dark-color: #023e8a;       ← Color azul oscuro
-    
+
     --whatsapp: #25D366;         ← Verde de WhatsApp
     --instagram: #E4405F;        ← Rosa de Instagram
     --tiktok: #000000;           ← Negro de TikTok
@@ -236,6 +243,7 @@ Si quieres cambiar los colores, edita al inicio de **styles.css**:
 ```
 
 **Dónde se usan:**
+
 - `primary-color` → Botones principales, títulos, iconos
 - `secondary-color` → Degradados, efectos
 - `accent-color` → Hover (cuando pasas el mouse)
@@ -328,9 +336,13 @@ Si ves algo de **"Tu Nombre"**, **"tu_usuario"** o **"34XXXXXXXXX"**
 ## 🎯 RESUMEN RÁPIDO
 
 ### Para cambiar TEXTOS → Edita `config.js` sección `textos`
+
 ### Para cambiar FOTOS → Edita `config.js` sección `personal`
+
 ### Para cambiar CONTACTO → Edita `config.js` sección `contacto`
+
 ### Para cambiar CONTENIDO → Edita `config.js` arrays correspondientes
+
 ### Para cambiar COLORES → Edita `styles.css` sección `:root`
 
 ---

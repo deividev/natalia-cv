@@ -28,12 +28,12 @@ Template profesional, moderna y totalmente personalizable para asesores de segur
 
 ```javascript
 const CONFIG = {
-    personal: {
-        nombre: "Tu Nombre",
-        telefono: "34XXXXXXXXX",  // WhatsApp
-        // ...
-    }
-}
+  personal: {
+    nombre: "Tu Nombre",
+    telefono: "34XXXXXXXXX", // WhatsApp
+    // ...
+  },
+};
 ```
 
 ### 3. Abre `index.html` en tu navegador
@@ -44,15 +44,15 @@ const CONFIG = {
 
 ## 📚 Documentación
 
-| Guía | Descripción | Tiempo |
-|------|-------------|--------|
-| [INDEX.md](INDEX.md) | Punto de entrada - Empieza aquí | 2 min |
-| [INICIO-RAPIDO.md](INICIO-RAPIDO.md) | Guía rápida paso a paso | 5 min |
-| [README.md](README.md) | Documentación completa | 15 min |
-| [GUIA-VISUAL.md](GUIA-VISUAL.md) | Guía visual de personalización | 10 min |
-| [CHECKLIST.md](CHECKLIST.md) | Verificación antes de publicar | 5 min |
-| [ejemplos-config.js](ejemplos-config.js) | Ejemplos y plantillas | - |
-| [ESTRUCTURA.md](ESTRUCTURA.md) | Arquitectura del proyecto | 5 min |
+| Guía                                     | Descripción                     | Tiempo |
+| ---------------------------------------- | ------------------------------- | ------ |
+| [INDEX.md](INDEX.md)                     | Punto de entrada - Empieza aquí | 2 min  |
+| [INICIO-RAPIDO.md](INICIO-RAPIDO.md)     | Guía rápida paso a paso         | 5 min  |
+| [README.md](README.md)                   | Documentación completa          | 15 min |
+| [GUIA-VISUAL.md](GUIA-VISUAL.md)         | Guía visual de personalización  | 10 min |
+| [CHECKLIST.md](CHECKLIST.md)             | Verificación antes de publicar  | 5 min  |
+| [ejemplos-config.js](ejemplos-config.js) | Ejemplos y plantillas           | -      |
+| [ESTRUCTURA.md](ESTRUCTURA.md)           | Arquitectura del proyecto       | 5 min  |
 
 ---
 
@@ -84,13 +84,13 @@ const CONFIG = {
 ✅ Testimonios de clientes  
 ✅ Preguntas frecuentes  
 ✅ Beneficios y servicios  
-✅ Opciones del formulario  
+✅ Opciones del formulario
 
 ### Opcional en `styles.css`:
 
 🎨 Colores corporativos  
 🎨 Fuentes  
-🎨 Espaciados  
+🎨 Espaciados
 
 ---
 
@@ -122,6 +122,7 @@ const CONFIG = {
 ### Opciones Gratuitas:
 
 #### GitHub Pages
+
 ```bash
 1. Crea un repositorio en GitHub
 2. Sube tus archivos
@@ -131,6 +132,7 @@ const CONFIG = {
 ```
 
 #### Netlify
+
 ```bash
 1. Ve a netlify.com
 2. Arrastra tu carpeta
@@ -138,6 +140,7 @@ const CONFIG = {
 ```
 
 #### Vercel
+
 ```bash
 1. Ve a vercel.com
 2. Importa tu proyecto
@@ -159,12 +162,15 @@ const CONFIG = {
 ## 🎓 Niveles de Uso
 
 ### ⭐ Básico (5-10 min)
+
 Cambia nombre, teléfono y textos principales
 
 ### ⭐⭐ Intermedio (30 min)
+
 Añade tus fotos, testimonios y personaliza FAQs
 
 ### ⭐⭐⭐ Avanzado (1-2 horas)
+
 Cambia colores, optimiza imágenes, añade contenido único
 
 ---
@@ -214,6 +220,7 @@ Abre `index.html` en tu navegador para ver el template con datos de ejemplo.
 ## 🤝 Contribuciones
 
 Este es un template de uso libre. Siéntete libre de:
+
 - Personalizarlo para tu uso
 - Compartirlo con otros asesores
 - Sugerir mejoras

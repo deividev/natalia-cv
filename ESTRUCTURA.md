@@ -23,9 +23,11 @@ CV Nata/
 ## 🎯 ¿QUÉ ARCHIVO USAR PARA QUÉ?
 
 ### Para PERSONALIZAR tu web:
+
 **→ Abre: `config.js`**
 
 Este es el único archivo que necesitas editar. Aquí cambias:
+
 - Tus datos personales
 - WhatsApp y redes sociales
 - Todos los textos
@@ -35,14 +37,17 @@ Este es el único archivo que necesitas editar. Aquí cambias:
 - Todo el contenido
 
 ### Para APRENDER a usar la template:
+
 **→ Lee: `INICIO-RAPIDO.md`** (5 minutos)
 
 Guía paso a paso super simple para tener tu web lista rápido.
 
 ### Para REFERENCIA completa:
+
 **→ Lee: `README.md`**
 
 Documentación completa con:
+
 - Instrucciones detalladas
 - Cómo subir imágenes
 - Cómo cambiar colores
@@ -50,9 +55,11 @@ Documentación completa con:
 - Cómo publicar tu web
 
 ### Para INSPIRARTE:
+
 **→ Revisa: `ejemplos-config.js`**
 
 Ejemplos listos para copiar:
+
 - Configuraciones completas
 - Diferentes estilos de textos
 - Testimonios variados
@@ -60,6 +67,7 @@ Ejemplos listos para copiar:
 - Íconos disponibles
 
 ### Para VERIFICAR que todo está listo:
+
 **→ Usa: `CHECKLIST.md`**
 
 Lista de verificación punto por punto de todo lo que debes revisar antes de publicar.
@@ -94,22 +102,24 @@ Lista de verificación punto por punto de todo lo que debes revisar antes de pub
 
 ## 📝 RESUMEN DE ARCHIVOS
 
-| Archivo | ¿Qué es? | ¿Debo editarlo? |
-|---------|----------|-----------------|
-| **config.js** | Configuración de contenido | ✅ SÍ - Es el archivo principal |
-| **index.html** | Estructura HTML | ❌ NO - Ya está configurado |
-| **styles.css** | Estilos CSS | 🟡 OPCIONAL - Solo si quieres cambiar colores |
-| **README.md** | Documentación completa | 📖 LEER |
-| **INICIO-RAPIDO.md** | Guía rápida | 📖 LEER PRIMERO |
-| **CHECKLIST.md** | Lista de verificación | ✓ USAR ANTES DE PUBLICAR |
-| **ejemplos-config.js** | Ejemplos | 💡 CONSULTAR |
+| Archivo                | ¿Qué es?                   | ¿Debo editarlo?                               |
+| ---------------------- | -------------------------- | --------------------------------------------- |
+| **config.js**          | Configuración de contenido | ✅ SÍ - Es el archivo principal               |
+| **index.html**         | Estructura HTML            | ❌ NO - Ya está configurado                   |
+| **styles.css**         | Estilos CSS                | 🟡 OPCIONAL - Solo si quieres cambiar colores |
+| **README.md**          | Documentación completa     | 📖 LEER                                       |
+| **INICIO-RAPIDO.md**   | Guía rápida                | 📖 LEER PRIMERO                               |
+| **CHECKLIST.md**       | Lista de verificación      | ✓ USAR ANTES DE PUBLICAR                      |
+| **ejemplos-config.js** | Ejemplos                   | 💡 CONSULTAR                                  |
 
 ---
 
 ## 🎨 PERSONALIZACIÓN POR NIVELES
 
 ### ⭐ NIVEL 1 - BÁSICO (5-10 min)
+
 Edita en `config.js`:
+
 - Nombre y título
 - WhatsApp
 - Usuarios de redes sociales
@@ -118,7 +128,9 @@ Edita en `config.js`:
 **¡Ya tienes una web funcional!**
 
 ### ⭐⭐ NIVEL 2 - INTERMEDIO (30 min)
+
 Además del Nivel 1:
+
 - Tus fotos
 - Sección "Sobre Mí" completa
 - Personaliza testimonios
@@ -127,7 +139,9 @@ Además del Nivel 1:
 **¡Web profesional y personalizada!**
 
 ### ⭐⭐⭐ NIVEL 3 - AVANZADO (1-2 horas)
+
 Además de los niveles anteriores:
+
 - Cambia colores en `styles.css`
 - Añade más beneficios
 - Más testimonios reales
@@ -140,20 +154,21 @@ Además de los niveles anteriores:
 
 ## 🆘 RESOLUCIÓN RÁPIDA DE PROBLEMAS
 
-| Problema | Archivo a revisar | Solución |
-|----------|-------------------|----------|
-| Los cambios no se ven | `config.js` | Verifica que guardaste el archivo |
-| WhatsApp no funciona | `config.js` → contacto.telefono | Formato: 34XXXXXXXXX |
-| Imágenes no cargan | `config.js` → personal.fotoPerfil | Verifica la ruta/URL |
-| Texto de ejemplo visible | `config.js` → textos | Personaliza todos los textos |
-| Errores en consola | `config.js` | Revisa comas y comillas |
-| Colores no me gustan | `styles.css` → :root | Cambia las variables CSS |
+| Problema                 | Archivo a revisar                 | Solución                          |
+| ------------------------ | --------------------------------- | --------------------------------- |
+| Los cambios no se ven    | `config.js`                       | Verifica que guardaste el archivo |
+| WhatsApp no funciona     | `config.js` → contacto.telefono   | Formato: 34XXXXXXXXX              |
+| Imágenes no cargan       | `config.js` → personal.fotoPerfil | Verifica la ruta/URL              |
+| Texto de ejemplo visible | `config.js` → textos              | Personaliza todos los textos      |
+| Errores en consola       | `config.js`                       | Revisa comas y comillas           |
+| Colores no me gustan     | `styles.css` → :root              | Cambia las variables CSS          |
 
 ---
 
 ## 💾 ARCHIVOS DE BACKUP
 
 **IMPORTANTE:** Antes de hacer cambios grandes, haz una copia de:
+
 - `config.js` → `config-backup.js`
 
 Así siempre puedes volver atrás si algo sale mal.

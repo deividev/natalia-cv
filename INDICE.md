@@ -9,7 +9,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ## 🎯 ¿QUÉ NECESITAS?
 
 ### 👉 "Quiero empezar YA"
+
 **Lee: [INICIO-RAPIDO.md](INICIO-RAPIDO.md)** (5 minutos)
+
 - Pasos básicos para personalizar
 - Lo mínimo que necesitas cambiar
 - Listo en 5-10 minutos
@@ -17,7 +19,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Quiero entender cómo funciona"
+
 **Lee: [INDEX.md](INDEX.md)** (2 minutos) + **[ESTRUCTURA.md](ESTRUCTURA.md)** (5 minutos)
+
 - Visión general del proyecto
 - Cómo está organizado
 - Qué hace cada archivo
@@ -25,7 +29,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Quiero personalizar TODO"
+
 **Lee: [README.md](README.md)** (15 minutos)
+
 - Guía completa y detallada
 - Todas las opciones de personalización
 - Cómo cambiar colores, textos, imágenes
@@ -34,7 +40,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "No sé qué cambia qué"
+
 **Lee: [GUIA-VISUAL.md](GUIA-VISUAL.md)** (10 minutos)
+
 - Mapa visual de la configuración
 - Exactamente dónde aparece cada elemento
 - Diagramas y ejemplos visuales
@@ -42,7 +50,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Necesito ejemplos"
+
 **Abre: [ejemplos-config.js](ejemplos-config.js)**
+
 - Configuraciones completas de ejemplo
 - Testimonios variados
 - FAQs personalizadas
@@ -52,7 +62,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Quiero verificar antes de publicar"
+
 **Usa: [CHECKLIST.md](CHECKLIST.md)** (5 minutos)
+
 - Lista completa de verificación
 - Punto por punto
 - Nada se te olvidará
@@ -60,7 +72,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Ya publiqué, ¿cómo mantengo?"
+
 **Lee: [MANTENIMIENTO.md](MANTENIMIENTO.md)** (10 minutos)
+
 - Calendario de actualizaciones
 - Cómo añadir contenido nuevo
 - Mejores prácticas
@@ -69,7 +83,9 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ---
 
 ### 👉 "Voy a subirlo a GitHub"
+
 **Lee: [README-GITHUB.md](README-GITHUB.md)**
+
 - README optimizado para GitHub
 - Badges y estadísticas
 - Formato markdown profesional
@@ -78,18 +94,18 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 
 ## 📋 TODAS LAS GUÍAS
 
-| Archivo | Propósito | Tiempo | Prioridad |
-|---------|-----------|--------|-----------|
-| **[INDEX.md](INDEX.md)** | Bienvenida y orientación | 2 min | ⭐⭐⭐ |
-| **[INICIO-RAPIDO.md](INICIO-RAPIDO.md)** | Setup básico rápido | 5 min | ⭐⭐⭐ |
-| **[README.md](README.md)** | Documentación completa | 15 min | ⭐⭐⭐ |
-| **[GUIA-VISUAL.md](GUIA-VISUAL.md)** | Mapa visual | 10 min | ⭐⭐ |
-| **[ESTRUCTURA.md](ESTRUCTURA.md)** | Arquitectura del proyecto | 5 min | ⭐⭐ |
-| **[CHECKLIST.md](CHECKLIST.md)** | Lista de verificación | 5 min | ⭐⭐⭐ |
-| **[ejemplos-config.js](ejemplos-config.js)** | Ejemplos y plantillas | - | ⭐⭐ |
-| **[MANTENIMIENTO.md](MANTENIMIENTO.md)** | Actualización y mejora | 10 min | ⭐ |
-| **[README-GITHUB.md](README-GITHUB.md)** | README para GitHub | 3 min | ⭐ |
-| **[INDICE.md](INDICE.md)** | Este archivo | 2 min | - |
+| Archivo                                      | Propósito                 | Tiempo | Prioridad |
+| -------------------------------------------- | ------------------------- | ------ | --------- |
+| **[INDEX.md](INDEX.md)**                     | Bienvenida y orientación  | 2 min  | ⭐⭐⭐    |
+| **[INICIO-RAPIDO.md](INICIO-RAPIDO.md)**     | Setup básico rápido       | 5 min  | ⭐⭐⭐    |
+| **[README.md](README.md)**                   | Documentación completa    | 15 min | ⭐⭐⭐    |
+| **[GUIA-VISUAL.md](GUIA-VISUAL.md)**         | Mapa visual               | 10 min | ⭐⭐      |
+| **[ESTRUCTURA.md](ESTRUCTURA.md)**           | Arquitectura del proyecto | 5 min  | ⭐⭐      |
+| **[CHECKLIST.md](CHECKLIST.md)**             | Lista de verificación     | 5 min  | ⭐⭐⭐    |
+| **[ejemplos-config.js](ejemplos-config.js)** | Ejemplos y plantillas     | -      | ⭐⭐      |
+| **[MANTENIMIENTO.md](MANTENIMIENTO.md)**     | Actualización y mejora    | 10 min | ⭐        |
+| **[README-GITHUB.md](README-GITHUB.md)**     | README para GitHub        | 3 min  | ⭐        |
+| **[INDICE.md](INDICE.md)**                   | Este archivo              | 2 min  | -         |
 
 ---
 
@@ -132,20 +148,24 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ## 📖 POR TIPO DE CONTENIDO
 
 ### 📘 GUÍAS DE INICIO
+
 - [INDEX.md](INDEX.md)
 - [INICIO-RAPIDO.md](INICIO-RAPIDO.md)
 - [ESTRUCTURA.md](ESTRUCTURA.md)
 
 ### 📗 GUÍAS DE REFERENCIA
+
 - [README.md](README.md)
 - [GUIA-VISUAL.md](GUIA-VISUAL.md)
 - [ejemplos-config.js](ejemplos-config.js)
 
 ### 📙 GUÍAS DE PROCESO
+
 - [CHECKLIST.md](CHECKLIST.md)
 - [MANTENIMIENTO.md](MANTENIMIENTO.md)
 
 ### 📕 OTROS
+
 - [README-GITHUB.md](README-GITHUB.md)
 - [INDICE.md](INDICE.md)
 
@@ -154,6 +174,7 @@ Bienvenido a la documentación completa. Aquí encontrarás todas las guías org
 ## ⏱️ RUTAS DE APRENDIZAJE
 
 ### 🚀 RUTA RÁPIDA (15 minutos total)
+
 ```
 INDEX.md (2 min)
    ↓
@@ -169,6 +190,7 @@ CHECKLIST.md - básico (3 min)
 ---
 
 ### 📚 RUTA COMPLETA (1-2 horas)
+
 ```
 INDEX.md (2 min)
    ↓
@@ -192,6 +214,7 @@ Publicar (10-15 min)
 ---
 
 ### 🎓 RUTA EXPERTO (2-4 horas)
+
 ```
 Todo lo de Ruta Completa
    +
@@ -212,48 +235,49 @@ MANTENIMIENTO.md (setup) (10 min)
 
 ### "¿Cómo cambio...?"
 
-| Quiero cambiar... | Ver archivo... | Sección... |
-|-------------------|----------------|------------|
-| Mi nombre | README.md | Datos personales |
-| WhatsApp | README.md o INICIO-RAPIDO.md | Contacto |
-| Fotos | README.md o GUIA-VISUAL.md | Imágenes |
-| Textos | GUIA-VISUAL.md | Por sección |
-| Colores | README.md | Cambiar colores |
-| Testimonios | ejemplos-config.js | Testimonios |
-| FAQs | ejemplos-config.js | Preguntas frecuentes |
-| Redes sociales | README.md | Contacto |
+| Quiero cambiar... | Ver archivo...               | Sección...           |
+| ----------------- | ---------------------------- | -------------------- |
+| Mi nombre         | README.md                    | Datos personales     |
+| WhatsApp          | README.md o INICIO-RAPIDO.md | Contacto             |
+| Fotos             | README.md o GUIA-VISUAL.md   | Imágenes             |
+| Textos            | GUIA-VISUAL.md               | Por sección          |
+| Colores           | README.md                    | Cambiar colores      |
+| Testimonios       | ejemplos-config.js           | Testimonios          |
+| FAQs              | ejemplos-config.js           | Preguntas frecuentes |
+| Redes sociales    | README.md                    | Contacto             |
 
 ---
 
 ### "¿Cómo hago...?"
 
-| Quiero hacer... | Ver archivo... |
-|-----------------|----------------|
-| Setup inicial | INICIO-RAPIDO.md |
-| Personalización completa | README.md |
-| Verificar antes de publicar | CHECKLIST.md |
-| Publicar la web | README.md (sección "Publicar") |
-| Mantener actualizada | MANTENIMIENTO.md |
-| Subir a GitHub | README-GITHUB.md |
+| Quiero hacer...             | Ver archivo...                 |
+| --------------------------- | ------------------------------ |
+| Setup inicial               | INICIO-RAPIDO.md               |
+| Personalización completa    | README.md                      |
+| Verificar antes de publicar | CHECKLIST.md                   |
+| Publicar la web             | README.md (sección "Publicar") |
+| Mantener actualizada        | MANTENIMIENTO.md               |
+| Subir a GitHub              | README-GITHUB.md               |
 
 ---
 
 ### "¿Dónde está...?"
 
-| Busco... | Ver archivo... |
-|----------|----------------|
-| Ejemplos de configuración | ejemplos-config.js |
-| Mapa visual | GUIA-VISUAL.md |
-| Solución de problemas | README.md (sección final) |
-| Lista de verificación | CHECKLIST.md |
-| Estructura de archivos | ESTRUCTURA.md |
-| Calendario de updates | MANTENIMIENTO.md |
+| Busco...                  | Ver archivo...            |
+| ------------------------- | ------------------------- |
+| Ejemplos de configuración | ejemplos-config.js        |
+| Mapa visual               | GUIA-VISUAL.md            |
+| Solución de problemas     | README.md (sección final) |
+| Lista de verificación     | CHECKLIST.md              |
+| Estructura de archivos    | ESTRUCTURA.md             |
+| Calendario de updates     | MANTENIMIENTO.md          |
 
 ---
 
 ## 📱 ATAJOS ÚTILES
 
 ### Configuración mínima:
+
 ```
 1. Abre config.js
 2. Cambia: nombre, telefono, textos.heroTitulo
@@ -263,6 +287,7 @@ MANTENIMIENTO.md (setup) (10 min)
 ```
 
 ### Verificación rápida:
+
 ```
 1. Abre CHECKLIST.md
 2. Marca lo que ya hiciste
@@ -271,6 +296,7 @@ MANTENIMIENTO.md (setup) (10 min)
 ```
 
 ### Actualización rápida:
+
 ```
 1. Backup de config.js
 2. Edita lo que necesitas
@@ -283,18 +309,21 @@ MANTENIMIENTO.md (setup) (10 min)
 ## 💡 CONSEJOS DE USO
 
 ### Para principiantes:
+
 1. Empieza con INICIO-RAPIDO.md
 2. No te abrumes, ve paso a paso
 3. Usa los ejemplos de ejemplos-config.js
 4. Solo edita config.js al principio
 
 ### Para usuarios intermedios:
+
 1. Lee README.md completo
 2. Usa GUIA-VISUAL.md como referencia
 3. Experimenta con ejemplos-config.js
 4. Personaliza a fondo
 
 ### Para usuarios avanzados:
+
 1. Domina config.js
 2. Modifica styles.css (colores)
 3. Optimiza todo con MANTENIMIENTO.md
@@ -305,17 +334,20 @@ MANTENIMIENTO.md (setup) (10 min)
 ## 🎯 OBJETIVOS POR TIEMPO
 
 ### En 5 minutos:
+
 ✅ Entender estructura básica
 ✅ Cambiar datos mínimos
 ✅ Ver resultado en navegador
 
 ### En 30 minutos:
+
 ✅ Personalización completa de textos
 ✅ Cambiar todas las fotos
 ✅ Configurar redes sociales
 ✅ Adaptar testimonios y FAQs
 
 ### En 1 hora:
+
 ✅ Todo lo anterior
 ✅ Optimizar imágenes
 ✅ Personalizar colores
@@ -323,6 +355,7 @@ MANTENIMIENTO.md (setup) (10 min)
 ✅ Preparar para publicar
 
 ### En 2 horas:
+
 ✅ Todo lo anterior
 ✅ Contenido único y profesional
 ✅ Publicada y funcionando online
@@ -368,6 +401,7 @@ Si ya publicaste:
 ## 📊 ESTADÍSTICAS
 
 **Total de documentación:**
+
 - 📄 12 archivos
 - 📖 9 guías markdown
 - 💻 2 archivos de código
@@ -379,11 +413,13 @@ Si ya publicaste:
 ## 🎓 RECURSOS ADICIONALES
 
 ### Dentro del proyecto:
+
 - Todos los archivos .md son guías
 - config.js es tu archivo principal de trabajo
 - ejemplos-config.js tiene plantillas listas
 
 ### Herramientas externas recomendadas:
+
 - TinyPNG.com - Optimizar imágenes
 - FontAwesome.com - Buscar iconos
 - GitHub.com - Publicar gratis
@@ -428,6 +464,7 @@ Si ya publicaste:
 ## 🎉 CONCLUSIÓN
 
 Tienes toda la documentación necesaria para:
+
 - ✅ Configurar tu web en minutos
 - ✅ Personalizarla completamente
 - ✅ Publicarla online
@@ -443,4 +480,4 @@ Tienes toda la documentación necesaria para:
 
 ---
 
-*Última actualización: Enero 2026*
+_Última actualización: Enero 2026_

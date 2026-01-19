@@ -3,6 +3,7 @@
 ## 🎯 MÉTODO RECOMENDADO (5 MINUTOS)
 
 ### PASO 1: Prepara las fotos (1 min)
+
 ```
 1. Recibe 2 fotos del cliente
 2. Renómbralas como:
@@ -13,6 +14,7 @@
 ```
 
 ### PASO 2: Copia la plantilla (10 seg)
+
 ```
 1. Duplica: config-plantilla.js
 2. Renómbralo como: config.js
@@ -20,6 +22,7 @@
 ```
 
 ### PASO 3: Edita config.js (3 min)
+
 ```javascript
 // Solo cambia estas líneas:
 
@@ -43,6 +46,7 @@ textos: {
 ```
 
 ### PASO 4: Prueba (1 min)
+
 ```
 1. Guarda config.js (Ctrl + S)
 2. Abre index.html en Chrome
@@ -75,13 +79,13 @@ CV Nata/
 
 Si usas editor de código con "Buscar y Reemplazar":
 
-| BUSCAR | REEMPLAZAR POR |
-|--------|----------------|
-| `[NOMBRE DEL CLIENTE]` | María García López |
-| `[TÍTULO PROFESIONAL]` | Asesora de Seguros |
-| `34[NÚMERO]` | 34612345678 |
-| `[usuario]` (Instagram) | maria_seguros |
-| `[usuario]` (TikTok) | maria_seguros |
+| BUSCAR                  | REEMPLAZAR POR     |
+| ----------------------- | ------------------ |
+| `[NOMBRE DEL CLIENTE]`  | María García López |
+| `[TÍTULO PROFESIONAL]`  | Asesora de Seguros |
+| `34[NÚMERO]`            | 34612345678        |
+| `[usuario]` (Instagram) | maria_seguros      |
+| `[usuario]` (TikTok)    | maria_seguros      |
 
 Haz todos los reemplazos de una vez → Guarda → Listo
 
@@ -90,6 +94,7 @@ Haz todos los reemplazos de una vez → Guarda → Listo
 ## 🎨 PERSONALIZACIÓN POR NIVEL
 
 ### ⚡ NIVEL EXPRESS (5 min)
+
 ```javascript
 ✓ nombre
 ✓ telefono
@@ -98,29 +103,36 @@ Haz todos los reemplazos de una vez → Guarda → Listo
 ✓ instagram
 ✓ heroTitulo
 ```
+
 **YA FUNCIONA** ✅
 
 ---
 
 ### 🎨 NIVEL ESTÁNDAR (+10 min)
+
 Además del express:
+
 ```javascript
 ✓ titulo (cargo del cliente)
 ✓ heroSubtitulo
 ✓ heroDescripcion
 ✓ tiktok / facebook / linkedin
 ```
+
 **MÁS PROFESIONAL** ✅
 
 ---
 
 ### 💎 NIVEL PREMIUM (+20 min)
+
 Además del estándar:
+
 ```javascript
 ✓ sobreMiParrafo1-3 (historia del cliente)
 ✓ testimonios (si tiene reales)
 ✓ preguntasFrecuentes (adaptadas)
 ```
+
 **TOTALMENTE PERSONALIZADO** ✅
 
 ---
@@ -128,8 +140,10 @@ Además del estándar:
 ## 🚨 ERRORES COMUNES Y SOLUCIÓN
 
 ### ❌ "Las fotos no se ven"
+
 **Causa:** Carpeta images/ no existe o fotos mal nombradas
-**Solución:** 
+**Solución:**
+
 ```
 1. Verifica que existe: CV Nata/images/
 2. Verifica nombres exactos: perfil.jpg y hero.jpg
@@ -137,27 +151,31 @@ Además del estándar:
 ```
 
 ### ❌ "WhatsApp abre pero no es el cliente"
+
 **Causa:** Número mal escrito en config.js
 **Solución:**
+
 ```javascript
 // Formato correcto:
-telefono: "34612345678"
-         
+telefono: "34612345678";
+
 // Formato incorrecto:
-telefono: "+34 612 345 678"  // ❌ Sin + ni espacios
-telefono: "612345678"         // ❌ Falta código país
+telefono: "+34 612 345 678"; // ❌ Sin + ni espacios
+telefono: "612345678"; // ❌ Falta código país
 ```
 
 ### ❌ "Instagram no funciona"
+
 **Causa:** Usuario con @ o URL completa
 **Solución:**
+
 ```javascript
 // Correcto:
-instagram: "maria_seguros"
+instagram: "maria_seguros";
 
 // Incorrecto:
-instagram: "@maria_seguros"           // ❌ Sin @
-instagram: "instagram.com/maria..."   // ❌ Solo usuario
+instagram: "@maria_seguros"; // ❌ Sin @
+instagram: "instagram.com/maria..."; // ❌ Solo usuario
 ```
 
 ---
@@ -180,6 +198,7 @@ Antes de decir "está listo":
 ## 💼 FLUJO PROFESIONAL
 
 ### PARA 1 CLIENTE:
+
 ```
 1. Crea carpeta: images/
 2. Guarda fotos: perfil.jpg, hero.jpg
@@ -189,6 +208,7 @@ Antes de decir "está listo":
 ```
 
 ### PARA MÚLTIPLES CLIENTES:
+
 ```
 proyecto/
 ├── cliente1/
@@ -205,6 +225,7 @@ proyecto/
 ```
 
 O usar estructura:
+
 ```
 proyecto/
 ├── images/           (cambias fotos por cliente)
@@ -221,7 +242,9 @@ proyecto/
 ## 🎁 SCRIPTS ÚTILES
 
 ### Script Mental de Verificación
+
 Busca estos textos en config.js antes de entregar:
+
 - ❌ `[NOMBRE` → Reemplaza con nombre real
 - ❌ `[TÍTULO` → Reemplaza con título real
 - ❌ `[usuario]` → Reemplaza con usuario real
@@ -265,6 +288,7 @@ Saludos,
 Si manejas muchos clientes, considera:
 
 ### 1. Script de creación automática
+
 ```bash
 # crear-cliente.sh
 mkdir "cliente-$1"
@@ -273,6 +297,7 @@ echo "Cliente $1 creado. Edita config.js"
 ```
 
 ### 2. Lista de verificación automática
+
 ```javascript
 // verificar.js
 // Lee config.js y busca texto placeholder
@@ -280,6 +305,7 @@ echo "Cliente $1 creado. Edita config.js"
 ```
 
 ### 3. Generador de screenshots
+
 Usa herramientas como Playwright para capturar screenshots automáticos de la web de cada cliente.
 
 ---
@@ -287,6 +313,7 @@ Usa herramientas como Playwright para capturar screenshots automáticos de la we
 ## 🎓 NIVEL EXPERTO
 
 ### Multi-cliente con Git
+
 ```bash
 # Rama por cliente
 git checkout -b cliente-maria
@@ -306,16 +333,16 @@ git checkout cliente-juan   # Ver web de Juan
 
 ## 📊 TIEMPOS REALES
 
-| Tarea | Tiempo Real |
-|-------|-------------|
-| Recibir datos | 5-60 min (depende del cliente) |
-| Preparar fotos | 2 min |
-| Editar config.js | 3 min |
-| Verificar | 1 min |
-| **TOTAL MÍNIMO** | **6 min** |
-| Personalización completa | +15 min |
-| Publicación | +10 min |
-| **TOTAL COMPLETO** | **31 min** |
+| Tarea                    | Tiempo Real                    |
+| ------------------------ | ------------------------------ |
+| Recibir datos            | 5-60 min (depende del cliente) |
+| Preparar fotos           | 2 min                          |
+| Editar config.js         | 3 min                          |
+| Verificar                | 1 min                          |
+| **TOTAL MÍNIMO**         | **6 min**                      |
+| Personalización completa | +15 min                        |
+| Publicación              | +10 min                        |
+| **TOTAL COMPLETO**       | **31 min**                     |
 
 ---
 
@@ -331,6 +358,7 @@ git checkout cliente-juan   # Ver web de Juan
 **Después de hacer 2-3 clientes, lo harás en 5 minutos.**
 
 La clave es:
+
 1. Pedir siempre el mismo formato de fotos
 2. Usar nombres estándar (perfil.jpg, hero.jpg)
 3. Tener config-plantilla.js listo
@@ -340,4 +368,4 @@ La clave es:
 
 **¡En menos de 5 minutos tendrás la web del cliente funcionando!** ⚡
 
-*Última actualización: Enero 2026*
+_Última actualización: Enero 2026_

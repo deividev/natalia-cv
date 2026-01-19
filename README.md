@@ -58,18 +58,22 @@ textos: {
 Tienes dos opciones:
 
 #### Opción A: Usar imágenes de tu ordenador
+
 1. Crea una carpeta llamada "images" en tu proyecto
 2. Guarda tus imágenes allí (ejemplo: "perfil.jpg", "hero.jpg")
 3. En config.js, actualiza las rutas:
+
 ```javascript
 fotoPerfil: "images/perfil.jpg",
 fotoHero: "images/hero.jpg"
 ```
 
 #### Opción B: Usar enlaces de internet
+
 1. Sube tus imágenes a un servicio como Imgur, ImgBB, o tu propio hosting
 2. Copia la URL de la imagen
 3. Pégala en config.js:
+
 ```javascript
 fotoPerfil: "https://tu-url-aqui.com/imagen.jpg",
 ```
@@ -77,44 +81,47 @@ fotoPerfil: "https://tu-url-aqui.com/imagen.jpg",
 ### 4. Personalizar Contenido Adicional
 
 #### Beneficios de Sanitas
+
 Modifica el array `beneficiosSanitas` para cambiar las tarjetas de servicios:
 
 ```javascript
 beneficiosSanitas: [
-    {
-        icono: "fa-hospital",  // Iconos de Font Awesome
-        titulo: "Red de Hospitales",
-        descripcion: "Acceso a los mejores hospitales"
-    },
-    // Añade más o modifica
-]
+  {
+    icono: "fa-hospital", // Iconos de Font Awesome
+    titulo: "Red de Hospitales",
+    descripcion: "Acceso a los mejores hospitales",
+  },
+  // Añade más o modifica
+];
 ```
 
 #### Testimonios
+
 Edita el array `testimonios`:
 
 ```javascript
 testimonios: [
-    {
-        estrellas: 5,
-        texto: "Comentario del cliente...",
-        autor: "María G."
-    },
-    // Añade más testimonios
-]
+  {
+    estrellas: 5,
+    texto: "Comentario del cliente...",
+    autor: "María G.",
+  },
+  // Añade más testimonios
+];
 ```
 
 #### Preguntas Frecuentes
+
 Modifica el array `preguntasFrecuentes`:
 
 ```javascript
 preguntasFrecuentes: [
-    {
-        pregunta: "¿Tu pregunta aquí?",
-        respuesta: "La respuesta aquí..."
-    },
-    // Añade más preguntas
-]
+  {
+    pregunta: "¿Tu pregunta aquí?",
+    respuesta: "La respuesta aquí...",
+  },
+  // Añade más preguntas
+];
 ```
 
 ### 5. Cambiar Colores (Opcional)
@@ -123,10 +130,10 @@ Si quieres personalizar los colores, edita el archivo **styles.css** al inicio:
 
 ```css
 :root {
-    --primary-color: #00a0df;    /* Color principal */
-    --secondary-color: #0077b6;  /* Color secundario */
-    --accent-color: #48cae4;     /* Color de acento */
-    --dark-color: #023e8a;       /* Color oscuro */
+  --primary-color: #00a0df; /* Color principal */
+  --secondary-color: #0077b6; /* Color secundario */
+  --accent-color: #48cae4; /* Color de acento */
+  --dark-color: #023e8a; /* Color oscuro */
 }
 ```
 
@@ -135,6 +142,7 @@ Si quieres personalizar los colores, edita el archivo **styles.css** al inicio:
 Esta template usa Font Awesome. Busca más iconos en: https://fontawesome.com/icons
 
 Ejemplos de iconos populares:
+
 - `fa-hospital` - Hospital
 - `fa-user-md` - Médico
 - `fa-heart` - Corazón
@@ -186,15 +194,18 @@ Opciones gratuitas para publicar:
 ## 🆘 Problemas Comunes
 
 **Las imágenes no se ven:**
+
 - Verifica que las URLs sean correctas
 - Asegúrate de que las imágenes sean públicas
 - Comprueba que no haya espacios en las rutas
 
 **Los enlaces de WhatsApp no funcionan:**
+
 - Verifica que el formato sea correcto: 34XXXXXXXXX (sin espacios ni guiones)
 - Asegúrate de incluir el código de país
 
 **Los cambios no se ven:**
+
 - Refresca la página (Ctrl + F5 o Cmd + Shift + R)
 - Limpia la caché del navegador
 - Asegúrate de haber guardado el archivo config.js
@@ -202,6 +213,7 @@ Opciones gratuitas para publicar:
 ## 📧 Soporte
 
 Esta template está diseñada para ser fácil de usar. Si tienes dudas:
+
 1. Revisa este README
 2. Verifica que hayas editado solo el archivo config.js
 3. Comprueba que la sintaxis del JavaScript sea correcta (comas, comillas, etc.)

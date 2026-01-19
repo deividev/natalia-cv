@@ -5,11 +5,13 @@ Marca cada item cuando lo completes:
 ## 📋 CONFIGURACIÓN BÁSICA
 
 ### Información Personal
+
 - [ ] Cambié mi nombre en `personal.nombre`
 - [ ] Actualicé mi título en `personal.titulo`
 - [ ] Cambié el nombre de la empresa en `personal.empresa`
 
 ### Contacto
+
 - [ ] Actualicé mi WhatsApp en formato internacional (34XXXXXXXXX)
 - [ ] Puse mi usuario de Instagram (sin @)
 - [ ] Puse mi usuario de TikTok (sin @)
@@ -17,6 +19,7 @@ Marca cada item cuando lo completes:
 - [ ] Configuré LinkedIn (si lo uso)
 
 ### Imágenes
+
 - [ ] Subí/elegí mi foto de perfil
 - [ ] Actualicé `personal.fotoPerfil` con la ruta correcta
 - [ ] Subí/elegí imagen para la sección hero
@@ -26,34 +29,40 @@ Marca cada item cuando lo completes:
 ## ✏️ TEXTOS Y CONTENIDO
 
 ### Sección Hero (Cabecera)
+
 - [ ] Personalicé `textos.heroTitulo`
 - [ ] Personalicé `textos.heroSubtitulo`
 - [ ] Personalicé `textos.heroDescripcion`
 
 ### Sección "Sobre Mí"
+
 - [ ] Escribí mi presentación en `textos.sobreMiParrafo1`
 - [ ] Añadí mi experiencia en `textos.sobreMiParrafo2`
 - [ ] Completé con mi filosofía en `textos.sobreMiParrafo3`
 
 ### Testimonios
+
 - [ ] Revisé los testimonios predeterminados
 - [ ] Añadí testimonios reales (si los tengo)
 - [ ] Verifiqué que tengo entre 3-6 testimonios
 - [ ] Los testimonios tienen nombres/iniciales apropiados
 
 ### Preguntas Frecuentes
+
 - [ ] Revisé las FAQs predeterminadas
 - [ ] Las adapté a las preguntas que recibo realmente
 - [ ] Las respuestas son claras y útiles
 - [ ] Tengo entre 4-8 preguntas
 
 ### Beneficios
+
 - [ ] Revisé los beneficios de Sanitas
 - [ ] Los adapté a mi oferta (si es necesario)
 - [ ] Los íconos son apropiados
 - [ ] Las descripciones son claras
 
 ### Formulario
+
 - [ ] Revisé las opciones del formulario
 - [ ] Las opciones reflejan mis servicios
 - [ ] Añadí/quité opciones según necesite
@@ -61,11 +70,13 @@ Marca cada item cuando lo completes:
 ## 🎨 PERSONALIZACIÓN AVANZADA (Opcional)
 
 ### Colores
+
 - [ ] Revisé los colores en styles.css
 - [ ] Los adapté a mi marca (si quiero)
 - [ ] Verifiqué que los colores se ven bien juntos
 
 ### Contenido Extra
+
 - [ ] Añadí más beneficios (si quiero)
 - [ ] Añadí más testimonios
 - [ ] Añadí más FAQs
@@ -74,6 +85,7 @@ Marca cada item cuando lo completes:
 ## 🔍 VERIFICACIÓN FINAL
 
 ### Funcionalidad
+
 - [ ] Abrí index.html en el navegador
 - [ ] La página carga correctamente
 - [ ] Todas las imágenes se ven
@@ -81,13 +93,15 @@ Marca cada item cuando lo completes:
 - [ ] No hay textos de ejemplo visibles
 
 ### Enlaces
+
 - [ ] Click en botón de WhatsApp → abre conversación conmigo
 - [ ] Click en Instagram → va a mi perfil
-- [ ] Click en TikTok → va a mi perfil  
+- [ ] Click en TikTok → va a mi perfil
 - [ ] Click en otras redes → funcionan correctamente
 - [ ] Formulario de contacto → redirige a WhatsApp con mi número
 
 ### Responsive (Móvil)
+
 - [ ] Abrí la página en mi móvil
 - [ ] Todo se ve bien en pantalla pequeña
 - [ ] Los botones son fáciles de tocar
@@ -95,6 +109,7 @@ Marca cada item cuando lo completes:
 - [ ] Los textos son legibles
 
 ### Redes Sociales
+
 - [ ] Probé el botón de WhatsApp en hero
 - [ ] Probé los botones en sección de contacto
 - [ ] Probé los íconos del footer
@@ -111,6 +126,7 @@ Marca cada item cuando lo completes:
 ## 🚀 ANTES DE PUBLICAR
 
 ### Contenido
+
 - [ ] Revisé ortografía y gramática
 - [ ] Los textos suenan profesionales
 - [ ] No hay información falsa o exagerada
@@ -118,11 +134,13 @@ Marca cada item cuando lo completes:
 - [ ] Las fotos son profesionales
 
 ### Legal
+
 - [ ] Tengo derecho a usar las imágenes
 - [ ] Los testimonios son verídicos (o genéricos apropiados)
 - [ ] No hay información confidencial expuesta
 
 ### Optimización
+
 - [ ] Las imágenes están optimizadas (no pesan mucho)
 - [ ] La página carga rápido
 - [ ] No hay errores en la consola del navegador
