@@ -4,6 +4,15 @@
 // Modifica estos valores para personalizar tu web
 
 const CONFIG = {
+  // ===== METADATOS SEO =====
+  seo: {
+    tituloWeb: "Natalia Seguros - Asesoría de Seguros de Salud",
+    descripcion:
+      "Asesoría personalizada de seguros de salud. Te ayudo a encontrar la mejor cobertura para ti y tu familia. Asesoramiento gratuito y sin compromiso.",
+    palabrasClave:
+      "seguros salud, asesora seguros, seguros médicos, cobertura salud, asesoramiento seguros",
+  },
+
   // ===== DATOS PERSONALES =====
   personal: {
     nombre: "Natalia",

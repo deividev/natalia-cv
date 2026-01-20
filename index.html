@@ -2,13 +2,113 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seguros de Salud Sanitas - Asesoría Personalizada</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0066cc" />
+    <title>Natalia Seguros - Asesoría de Seguros de Salud</title>
+    <meta
+      name="description"
+      content="Asesoría personalizada de seguros de salud. Te ayudo a encontrar la mejor cobertura para ti y tu familia. Asesoramiento gratuito y sin compromiso."
+    />
+    <meta
+      name="keywords"
+      content="seguros salud, asesora seguros, seguros médicos, cobertura salud, asesoramiento seguros"
+    />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.nataliaseguros.es/" />
+    <meta
+      property="og:title"
+      content="Natalia Seguros - Asesoría de Seguros de Salud"
+    />
+    <meta
+      property="og:description"
+      content="Asesoría personalizada de seguros de salud. Te ayudo a encontrar la mejor cobertura para ti y tu familia. Asesoramiento gratuito y sin compromiso."
+    />
+    <meta
+      property="og:image"
+      content="https://www.nataliaseguros.es/images/perfil.jpeg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.nataliaseguros.es/" />
+    <meta
+      name="twitter:title"
+      content="Natalia Seguros - Asesoría de Seguros de Salud"
+    />
+    <meta
+      name="twitter:description"
+      content="Asesoría personalizada de seguros de salud. Te ayudo a encontrar la mejor cobertura para ti y tu familia. Asesoramiento gratuito y sin compromiso."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.nataliaseguros.es/images/perfil.jpeg"
+    />
+
+    <!-- Critical CSS Inline -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #00a0df;
+        --white: #fff;
+        --text-dark: #333;
+        --light-bg: #f8f9fa;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-dark);
+        background-color: var(--white);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+      .logo h2 {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+      }
+    </style>
+
+    <link
+      rel="preload"
+      href="styles.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <script src="config.js"></script>
   </head>
   <body>
@@ -23,7 +123,13 @@
     <main>
       <section class="hero">
         <div class="hero-image">
-          <img id="hero-imagen" src="" alt="Asesora de Seguros" />
+          <img
+            id="hero-imagen"
+            src=""
+            alt="Asesora de Seguros"
+            width="1200"
+            height="800"
+          />
         </div>
         <div class="container">
           <div class="hero-content">
@@ -80,7 +186,13 @@
           <h2 id="titulo-sobre-mi"></h2>
           <div class="about-me-content">
             <div class="about-me-image">
-              <img id="perfil-imagen" src="" alt="Foto de perfil" />
+              <img
+                id="perfil-imagen"
+                src=""
+                alt="Foto de perfil"
+                width="400"
+                loading="lazy"
+              />
             </div>
             <div class="about-me-text">
               <h3 id="nombre-personal">Tu Nombre</h3>
@@ -233,8 +345,7 @@
           <!-- Se generará dinámicamente desde config.js -->
         </div>
         <p id="footer-text">
-          &copy; 2026 Asesoría de Seguros Sanitas. Todos los derechos
-          reservados.
+          &copy; 2026 Asesoría de Seguros. Todos los derechos reservados.
         </p>
       </div>
     </footer>
@@ -245,10 +356,38 @@
       // ============================================
 
       document.addEventListener("DOMContentLoaded", function () {
+        initializeSEO();
         initializePage();
         initializeFAQ();
         initializeContactForm();
       });
+
+      function initializeSEO() {
+        // Título de la página
+        document.title = CONFIG.seo.tituloWeb;
+
+        // Meta tags básicos
+        document.querySelector('meta[name="description"]').content =
+          CONFIG.seo.descripcion;
+        document.querySelector('meta[name="keywords"]').content =
+          CONFIG.seo.palabrasClave;
+
+        // Open Graph / Facebook / WhatsApp
+        document.querySelector('meta[property="og:title"]').content =
+          CONFIG.seo.tituloWeb;
+        document.querySelector('meta[property="og:description"]').content =
+          CONFIG.seo.descripcion;
+        document.querySelector('meta[property="og:image"]').content =
+          CONFIG.personal.fotoHero;
+
+        // Twitter
+        document.querySelector('meta[name="twitter:title"]').content =
+          CONFIG.seo.tituloWeb;
+        document.querySelector('meta[name="twitter:description"]').content =
+          CONFIG.seo.descripcion;
+        document.querySelector('meta[name="twitter:image"]').content =
+          CONFIG.personal.fotoHero;
+      }
 
       function initializePage() {
         // Header
@@ -342,12 +481,12 @@
         const grid = document.getElementById("service-grid");
         CONFIG.beneficiosSanitas.forEach((servicio) => {
           const card = `
-                    <div class="service-card">
-                        <i class="fas ${servicio.icono}"></i>
-                        <h3>${servicio.titulo}</h3>
-                        <p>${servicio.descripcion}</p>
-                    </div>
-                `;
+                          <div class="service-card">
+                              <i class="fas ${servicio.icono}"></i>
+                              <h3>${servicio.titulo}</h3>
+                              <p>${servicio.descripcion}</p>
+                          </div>
+                      `;
           grid.innerHTML += card;
         });
       }
@@ -368,12 +507,12 @@
             .fill('<i class="fas fa-star"></i>')
             .join("");
           const card = `
-                    <div class="testimonial-card">
-                        <div class="stars">${stars}</div>
-                        <p class="testimonial-text">"${testimonio.texto}"</p>
-                        <p class="testimonial-author">- ${testimonio.autor}</p>
-                    </div>
-                `;
+                          <div class="testimonial-card">
+                              <div class="stars">${stars}</div>
+                              <p class="testimonial-text">"${testimonio.texto}"</p>
+                              <p class="testimonial-author">- ${testimonio.autor}</p>
+                          </div>
+                      `;
           grid.innerHTML += card;
         });
       }
@@ -382,16 +521,16 @@
         const list = document.getElementById("faq-list");
         CONFIG.preguntasFrecuentes.forEach((faq, index) => {
           const item = `
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>${faq.pregunta}</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>${faq.respuesta}</p>
-                        </div>
-                    </div>
-                `;
+                          <div class="faq-item">
+                              <div class="faq-question">
+                                  <h3>${faq.pregunta}</h3>
+                                  <i class="fas fa-chevron-down"></i>
+                              </div>
+                              <div class="faq-answer">
+                                  <p>${faq.respuesta}</p>
+                              </div>
+                          </div>
+                      `;
           list.innerHTML += item;
         });
       }
@@ -411,54 +550,54 @@
 
         // WhatsApp
         const whatsapp = `
-                <a href="${getWhatsAppLink()}" class="contact-btn whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </a>
-            `;
+                      <a href="${getWhatsAppLink()}" class="contact-btn whatsapp" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                          <span>WhatsApp</span>
+                      </a>
+                  `;
         container.innerHTML += whatsapp;
 
         // Instagram
         if (CONFIG.contacto.instagram) {
           const instagram = `
-                    <a href="${getSocialLink("instagram")}" class="contact-btn instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                `;
+                          <a href="${getSocialLink("instagram")}" class="contact-btn instagram" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              <span>Instagram</span>
+                          </a>
+                      `;
           container.innerHTML += instagram;
         }
 
         // TikTok
         if (CONFIG.contacto.tiktok) {
           const tiktok = `
-                    <a href="${getSocialLink("tiktok")}" class="contact-btn tiktok" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                        <span>TikTok</span>
-                    </a>
-                `;
+                          <a href="${getSocialLink("tiktok")}" class="contact-btn tiktok" target="_blank">
+                              <i class="fab fa-tiktok"></i>
+                              <span>TikTok</span>
+                          </a>
+                      `;
           container.innerHTML += tiktok;
         }
 
         // Facebook (opcional)
         if (CONFIG.contacto.facebook) {
           const facebook = `
-                    <a href="${getSocialLink("facebook")}" class="contact-btn facebook" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                `;
+                          <a href="${getSocialLink("facebook")}" class="contact-btn facebook" target="_blank">
+                              <i class="fab fa-facebook"></i>
+                              <span>Facebook</span>
+                          </a>
+                      `;
           container.innerHTML += facebook;
         }
 
         // LinkedIn (opcional)
         if (CONFIG.contacto.linkedin) {
           const linkedin = `
-                    <a href="${getSocialLink("linkedin")}" class="contact-btn linkedin" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                `;
+                          <a href="${getSocialLink("linkedin")}" class="contact-btn linkedin" target="_blank">
+                              <i class="fab fa-linkedin"></i>
+                              <span>LinkedIn</span>
+                          </a>
+                      `;
           container.innerHTML += linkedin;
         }
       }
@@ -468,45 +607,45 @@
 
         // WhatsApp
         footer.innerHTML += `
-                <a href="${getWhatsAppLink()}" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            `;
+                      <a href="${getWhatsAppLink()}" target="_blank" aria-label="WhatsApp">
+                          <i class="fab fa-whatsapp"></i>
+                      </a>
+                  `;
 
         // Instagram
         if (CONFIG.contacto.instagram) {
           footer.innerHTML += `
-                    <a href="${getSocialLink("instagram")}" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                `;
+                          <a href="${getSocialLink("instagram")}" target="_blank" aria-label="Instagram">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                      `;
         }
 
         // TikTok
         if (CONFIG.contacto.tiktok) {
           footer.innerHTML += `
-                    <a href="${getSocialLink("tiktok")}" target="_blank" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                `;
+                          <a href="${getSocialLink("tiktok")}" target="_blank" aria-label="TikTok">
+                              <i class="fab fa-tiktok"></i>
+                          </a>
+                      `;
         }
 
         // Facebook
         if (CONFIG.contacto.facebook) {
           footer.innerHTML += `
-                    <a href="${getSocialLink("facebook")}" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                `;
+                          <a href="${getSocialLink("facebook")}" target="_blank" aria-label="Facebook">
+                              <i class="fab fa-facebook"></i>
+                          </a>
+                      `;
         }
 
         // LinkedIn
         if (CONFIG.contacto.linkedin) {
           footer.innerHTML += `
-                    <a href="${getSocialLink("linkedin")}" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                `;
+                          <a href="${getSocialLink("linkedin")}" target="_blank" aria-label="LinkedIn">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                      `;
         }
       }
 
@@ -545,11 +684,11 @@
             // Crear mensaje de WhatsApp
             const whatsappMessage = `Hola, soy ${name}.
 
-Teléfono: ${phone}
-Email: ${email}
-Interés: ${interest}
+      Teléfono: ${phone}
+      Email: ${email}
+      Interés: ${interest}
 
-Mensaje: ${message}`;
+      Mensaje: ${message}`;
 
             // Redirigir a WhatsApp
             window.open(getWhatsAppLink(whatsappMessage), "_blank");
