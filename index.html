@@ -15,7 +15,7 @@
     <header>
       <nav>
         <div class="logo">
-          <h2 id="empresa-nombre">Seguros Sanitas</h2>
+          <h2 id="empresa-nombre"></h2>
         </div>
       </nav>
     </header>
@@ -60,7 +60,7 @@
 
       <section class="services">
         <div class="container">
-          <h2>¿Por qué elegir Sanitas?</h2>
+          <h2 id="titulo-sanitas"></h2>
           <div class="service-grid" id="service-grid">
             <!-- Se generará dinámicamente desde config.js -->
           </div>
@@ -77,7 +77,7 @@
 
       <section class="about-me">
         <div class="container">
-          <h2>Sobre Mí</h2>
+          <h2 id="titulo-sobre-mi"></h2>
           <div class="about-me-content">
             <div class="about-me-image">
               <img id="perfil-imagen" src="" alt="Foto de perfil" />
@@ -117,12 +117,8 @@
 
       <section class="about">
         <div class="container">
-          <h2>Asesoramiento Personalizado</h2>
-          <p>
-            Como asesora independiente de seguros, mi objetivo es ayudarte a
-            encontrar la mejor cobertura de salud para ti y tu familia. Te
-            ofrezco:
-          </p>
+          <h2 id="titulo-asesoramiento"></h2>
+          <p id="descripcion-asesoramiento"></p>
           <ul class="benefits" id="benefits-list">
             <!-- Se generará dinámicamente desde config.js -->
           </ul>
@@ -139,7 +135,7 @@
 
       <section class="testimonials">
         <div class="container">
-          <h2>Lo Que Dicen Mis Clientes</h2>
+          <h2 id="titulo-testimonios"></h2>
           <div class="testimonials-grid" id="testimonials-grid">
             <!-- Se generará dinámicamente desde config.js -->
           </div>
@@ -156,7 +152,7 @@
 
       <section class="faq">
         <div class="container">
-          <h2>Preguntas Frecuentes</h2>
+          <h2 id="titulo-faq"></h2>
           <div class="faq-list" id="faq-list">
             <!-- Se generará dinámicamente desde config.js -->
           </div>
@@ -165,19 +161,19 @@
 
       <section class="contact">
         <div class="container">
-          <h2>Contáctame</h2>
-          <p>Estoy aquí para resolver todas tus dudas</p>
+          <h2 id="titulo-contacto"></h2>
+          <p id="subtitulo-contacto"></p>
 
           <div class="contact-methods">
             <div class="contact-form-container">
-              <h3>Solicita tu Presupuesto Gratuito</h3>
+              <h3 id="titulo-formulario"></h3>
               <form class="contact-form" id="contactForm">
                 <div class="form-group">
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Tu nombre"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -186,7 +182,7 @@
                     type="tel"
                     id="phone"
                     name="phone"
-                    placeholder="Tu teléfono"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -195,7 +191,7 @@
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Tu email"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -209,18 +205,19 @@
                     id="message"
                     name="message"
                     rows="4"
-                    placeholder="Cuéntame qué necesitas..."
+                    placeholder=""
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-submit">
-                  <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                <button type="submit" class="btn btn-submit" id="boton-enviar">
+                  <i class="fas fa-paper-plane"></i>
+                  <span id="texto-boton-enviar"></span>
                 </button>
-                <p class="form-note">* Te responderé en menos de 24 horas</p>
+                <p class="form-note" id="nota-formulario"></p>
               </form>
             </div>
 
             <div class="contact-direct">
-              <h3>O Contáctame Directamente</h3>
+              <h3 id="titulo-contacto-directo"></h3>
               <div class="contact-options" id="contact-options">
                 <!-- Se generará dinámicamente desde config.js -->
               </div>
@@ -254,19 +251,27 @@
       });
 
       function initializePage() {
-        // Hero Section
+        // Header
         document.getElementById("empresa-nombre").textContent =
-          CONFIG.personal.empresa;
+          CONFIG.textos.empresaNombre;
+
+        // Hero Section
         document.getElementById("hero-imagen").src = CONFIG.personal.fotoHero;
-        document.getElementById("hero-titulo").textContent =
+        document.getElementById("hero-titulo").innerHTML =
           CONFIG.textos.heroTitulo;
-        document.getElementById("hero-subtitulo").textContent =
+        document.getElementById("hero-subtitulo").innerHTML =
           CONFIG.textos.heroSubtitulo;
-        document.getElementById("hero-descripcion").textContent =
+        document.getElementById("hero-descripcion").innerHTML =
           CONFIG.textos.heroDescripcion;
         document.getElementById("hero-whatsapp-btn").href = getWhatsAppLink();
 
+        // Sección "¿Por qué elegir Sanitas?"
+        document.getElementById("titulo-sanitas").innerHTML =
+          CONFIG.textos.tituloSanitas;
+
         // Sección "Sobre Mí"
+        document.getElementById("titulo-sobre-mi").innerHTML =
+          CONFIG.textos.tituloSobreMi;
         document.getElementById("perfil-imagen").src =
           CONFIG.personal.fotoPerfil;
         document.getElementById("perfil-imagen").alt = CONFIG.personal.nombre;
@@ -274,12 +279,50 @@
           CONFIG.personal.nombre;
         document.getElementById("titulo-personal").textContent =
           CONFIG.personal.titulo;
-        document.getElementById("sobre-mi-p1").textContent =
+        document.getElementById("sobre-mi-p1").innerHTML =
           CONFIG.textos.sobreMiParrafo1;
-        document.getElementById("sobre-mi-p2").textContent =
+        document.getElementById("sobre-mi-p2").innerHTML =
           CONFIG.textos.sobreMiParrafo2;
-        document.getElementById("sobre-mi-p3").textContent =
+        document.getElementById("sobre-mi-p3").innerHTML =
           CONFIG.textos.sobreMiParrafo3;
+
+        // Sección "Asesoramiento"
+        document.getElementById("titulo-asesoramiento").innerHTML =
+          CONFIG.textos.tituloAsesoramiento;
+        document.getElementById("descripcion-asesoramiento").innerHTML =
+          CONFIG.textos.descripcionAsesoramiento;
+
+        // Sección "Testimonios"
+        document.getElementById("titulo-testimonios").innerHTML =
+          CONFIG.textos.tituloTestimonios;
+
+        // Sección "FAQ"
+        document.getElementById("titulo-faq").innerHTML =
+          CONFIG.textos.tituloFAQ;
+
+        // Sección "Contacto"
+        document.getElementById("titulo-contacto").innerHTML =
+          CONFIG.textos.tituloContacto;
+        document.getElementById("subtitulo-contacto").innerHTML =
+          CONFIG.textos.subtituloContacto;
+        document.getElementById("titulo-formulario").innerHTML =
+          CONFIG.textos.tituloFormulario;
+        document.getElementById("titulo-contacto-directo").innerHTML =
+          CONFIG.textos.tituloContactoDirecto;
+
+        // Formulario
+        document.getElementById("name").placeholder =
+          CONFIG.textos.placeholderNombre;
+        document.getElementById("phone").placeholder =
+          CONFIG.textos.placeholderTelefono;
+        document.getElementById("email").placeholder =
+          CONFIG.textos.placeholderEmail;
+        document.getElementById("message").placeholder =
+          CONFIG.textos.placeholderMensaje;
+        document.getElementById("texto-boton-enviar").textContent =
+          CONFIG.textos.textoBotonEnviar;
+        document.getElementById("nota-formulario").textContent =
+          CONFIG.textos.notaFormulario;
 
         // Footer
         document.getElementById("footer-text").textContent =
