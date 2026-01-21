@@ -208,6 +208,64 @@ nav {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
+/* Botón de Solicitar Presupuesto */
+.btn-presupuesto {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2rem;
+  padding: 18px 40px;
+  box-shadow: 0 6px 25px rgba(255, 107, 107, 0.4);
+  animation: pulse-border 2s infinite;
+}
+
+.btn-presupuesto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.btn-presupuesto:hover::before {
+  left: 100%;
+}
+
+.btn-presupuesto:hover {
+  background: linear-gradient(135deg, #ee5a6f, #ff6b6b);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(255, 107, 107, 0.6);
+}
+
+.btn-presupuesto:active {
+  transform: translateY(-1px) scale(1.03);
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    box-shadow:
+      0 6px 25px rgba(255, 107, 107, 0.4),
+      0 0 0 0 rgba(255, 107, 107, 0.7);
+  }
+  50% {
+    box-shadow:
+      0 6px 25px rgba(255, 107, 107, 0.4),
+      0 0 0 10px rgba(255, 107, 107, 0);
+  }
+}
+
 /* Services Section */
 .services {
   padding: 80px 0;

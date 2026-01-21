@@ -143,14 +143,17 @@
               total transparencia.
             </p>
             <div class="cta-buttons">
-              <a
-                href="#"
+              <button
                 id="hero-whatsapp-btn"
-                class="btn btn-primary"
-                target="_blank"
+                class="btn btn-presupuesto"
+                onclick="
+                  document
+                    .querySelector('.contact')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
               >
-                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-              </a>
+                <i class="fas fa-file-invoice-dollar"></i> Solicitar presupuesto
+              </button>
             </div>
           </div>
         </div>
@@ -402,7 +405,7 @@
           CONFIG.textos.heroSubtitulo;
         document.getElementById("hero-descripcion").innerHTML =
           CONFIG.textos.heroDescripcion;
-        document.getElementById("hero-whatsapp-btn").href = getWhatsAppLink();
+        // document.getElementById("hero-whatsapp-btn").href = getWhatsAppLink(); // Ahora es un botón de scroll
 
         // Sección "¿Por qué elegir Sanitas?"
         document.getElementById("titulo-sanitas").innerHTML =
